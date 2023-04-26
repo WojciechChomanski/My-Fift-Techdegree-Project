@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+
+.gallery {
+  display: grid;
+  max-width: 1000px;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 200px));
+  grid-gap: 20px;
+  justify-content: center;
+  margin: auto;
+}
+
+
+.search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  
+  
+}
+input{
+  padding: 2%;
+  font-size: 15px;
+  width: 50%;
+  opacity: 50%;
+  border-width: 3px;
+  border-radius: 7px;
+  font-weight: bold;
+  
+}
