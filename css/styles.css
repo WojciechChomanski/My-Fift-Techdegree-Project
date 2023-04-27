@@ -3,6 +3,7 @@
 }
 
 
+/* Gallery styles */
 .gallery {
   display: grid;
   max-width: 1000px;
@@ -10,18 +11,18 @@
   grid-gap: 20px;
   justify-content: center;
   margin: auto;
-}
-
-
-.search{
+  }
+  
+  /* Search bar styles */
+  .search {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
+  }
   
-  
-}
-input{
+  /* Input styles */
+  input {
   padding: 2%;
   font-size: 15px;
   width: 50%;
@@ -29,5 +30,32 @@ input{
   border-width: 3px;
   border-radius: 7px;
   font-weight: bold;
-  
-}
+  }
+
+  /*
+Description of styles:
+
+Global styles:
+
+All elements should have a box-sizing of border-box to ensure padding and borders are included in width/height calculations.
+Gallery styles:
+
+The gallery container should be displayed as a grid layout.
+The grid should have a maximum width of 1000px.
+The grid should have columns that repeat based on available space, with each column being between 100px and 200px wide.
+There should be a gap of 20px between each grid item.
+The grid should be horizontally centered and have margin set to auto to center it on the page.
+Search bar styles:
+
+The search bar container should be displayed as a flex layout.
+The content within the container should be horizontally and vertically centered.
+The container should have a padding of 20px.
+Input styles:
+
+The input field should have a padding of 2%.
+The font size of the input field should be 15px.
+The input field should have a width of 50%.
+The input field should have an opacity of 50% to give it a slightly faded appearance.
+The input field should have a border width of 3px and a border radius of 7px to give it a rounded border.
+The font weight of the text in the input field should be bold.
+*/

@@ -1,13 +1,18 @@
 const photoSearch = document.getElementById("search");
 
 photoSearch.addEventListener("keyup", e => {
+    // Get the search input value and convert to lowercase
     let currentValue = e.target.value.toLowerCase();
+    // Get all img elements on the page
     let photos = document.querySelectorAll("img");
-
+    // Iterate through each photo and check if its caption matches the search input value
     photos.forEach(photo => {
+        // Get the caption from the data-caption attribute of the photo element
         const caption = photo.getAttribute('data-caption');
+        // If the caption includes the search input value, show the photo
         if (caption.toLowerCase().includes(currentValue)) {
             photo.style.display = "block";
+        // If the caption does not include the search input value, hide the photo
         } else {
             photo.style.display = "none";
         }
